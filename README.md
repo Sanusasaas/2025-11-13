@@ -4,5 +4,5 @@ $ curl -X POST http://localhost:8080/check -H "Content-Type: application/json" -
 ```
 ## Пример запроса на получение пдф файла:
 ```bash
-$ curl -X POST -H "Content-Type: application/json" -d '{"links_num": [1]}' http://localhost:8080/report --output report.pdf
+$ curl -X POST http://localhost:8080/report -H "Content-Type: application/json" -d '{"links_num": [1]}' --output report.pdf
 ```
